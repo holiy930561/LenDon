@@ -9,8 +9,9 @@ export const TRANSLATIONS = {
       settings: "Settings",
       setKey: "Set API Key",
       sellerCenter: "Shopee Seller Center",
-      modelPro: "Gemini 3.0 Pro (Best Quality)",
-      modelFlash: "Gemini 2.5 Flash (Fastest)"
+      model25Pro: "Gemini 2.5 Pro",
+      model25Flash: "Gemini 2.5 Flash",
+      model30Pro: "Gemini 3.0 Pro (Preview)"
     },
     tabs: {
       seo: { label: "SEO Title", desc: "Structured: Brand + Model + Features. Auto-adds [Freeship]" },
@@ -70,8 +71,9 @@ export const TRANSLATIONS = {
       settings: "设置",
       setKey: "配置 Key",
       sellerCenter: "Shopee 卖家中心",
-      modelPro: "Gemini 3.0 Pro (效果最好)",
-      modelFlash: "Gemini 2.5 Flash (速度最快)"
+      model25Pro: "Gemini 2.5 Pro (均衡)",
+      model25Flash: "Gemini 2.5 Flash (极速)",
+      model30Pro: "Gemini 3.0 Pro (最强/预览)"
     },
     tabs: {
       seo: { label: "SEO 标题", desc: "结构化：品牌+型号+卖点+人群。自动添加 [Freeship]" },

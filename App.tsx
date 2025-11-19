@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Package, ExternalLink, Zap, Cpu, Settings, Globe } from 'lucide-react';
 import { Scenario, TranslationState, ModelType, KEYWORD_PRESETS } from './types';
@@ -21,7 +22,7 @@ const App: React.FC = () => {
     keywords: [],
     customTags: [], // Initialize empty custom tags
     scenario: Scenario.SEO_TITLE,
-    model: 'gemini-3-pro-preview',
+    model: 'gemini-2.5-flash', // Default to Flash as it is usually the safest bet for speed/availability
     isLoading: false,
     error: null
   });
@@ -169,8 +170,9 @@ const App: React.FC = () => {
                  onChange={(e) => setState(prev => ({ ...prev, model: e.target.value as ModelType }))}
                  className="bg-slate-50 border border-slate-200 text-slate-700 text-xs font-semibold rounded-lg px-2 py-1.5 focus:outline-none focus:border-[#ff5722] focus:ring-1 focus:ring-[#ff5722]/20 cursor-pointer transition-all hover:bg-slate-100"
                >
-                 <option value="gemini-3-pro-preview">{t.header.modelPro}</option>
-                 <option value="gemini-2.5-flash">{t.header.modelFlash}</option>
+                 <option value="gemini-2.5-flash">{t.header.model25Flash}</option>
+                 <option value="gemini-2.5-pro">{t.header.model25Pro}</option>
+                 <option value="gemini-3-pro-preview">{t.header.model30Pro}</option>
                </select>
             </div>
 
